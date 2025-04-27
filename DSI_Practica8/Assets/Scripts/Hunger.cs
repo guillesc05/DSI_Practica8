@@ -6,7 +6,7 @@ using UnityEngine.UIElements;
 public class Hunger : MonoBehaviour
 {
     Slider hunger;
-    [SerializeField] float hungerDecreaseSpeed = 1.0f;
+    [SerializeField] float hungerDecreaseSpeed = 2.0f;
     private void OnEnable()
     {
         VisualElement root = GetComponent<UIDocument>().rootVisualElement;
