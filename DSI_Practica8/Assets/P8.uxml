@@ -16,7 +16,7 @@
         <ui:VisualElement name="rightBar" style="flex-grow: 1; width: auto; max-width: 15%; background-color: rgb(164, 68, 68);">
             <ui:VisualElement name="nameChanger" style="flex-grow: 1;">
                 <ui:TextField picking-mode="Ignore" value="Introduce Nombre" name="newName" style="min-height: auto; max-height: none; -unity-text-align: middle-center; flex-direction: column; height: auto;" />
-                <ui:VisualElement name="nameButton" style="flex-grow: 1; width: 80%; align-self: center; height: 60%; min-height: 60%; background-color: rgb(74, 236, 49); align-items: center; justify-content: center;">
+                <ui:VisualElement name="nameButton" style="flex-grow: 1; width: 80%; align-self: center; height: 60%; min-height: 60%; background-color: rgb(74, 236, 49); align-items: center; justify-content: center; border-top-left-radius: 20px; border-top-right-radius: 20px; border-bottom-right-radius: 20px; border-bottom-left-radius: 20px;">
                     <ui:Label tabindex="-1" text="Pulsa para cambiar nombre" parse-escape-sequences="true" display-tooltip-when-elided="true" style="align-self: center; -unity-text-align: middle-center; white-space: normal;" />
                 </ui:VisualElement>
             </ui:VisualElement>
