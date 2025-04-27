@@ -130,6 +130,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1638033025127775474, guid: 11b217e9de55efd4788f9d62f0ab2f7e, type: 3}
+      propertyPath: _inventory
+      value: 
+      objectReference: {fileID: 1272026151}
     - target: {fileID: 3932028710614748883, guid: 11b217e9de55efd4788f9d62f0ab2f7e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -206,7 +210,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8b935b24e258c446abc28f62ebb17a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inventory: {fileID: 0}
 --- !u!114 &395762802
 MonoBehaviour:
   m_ObjectHideFlags: 0
