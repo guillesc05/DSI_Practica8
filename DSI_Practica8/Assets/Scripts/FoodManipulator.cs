@@ -38,6 +38,7 @@ public class FoodManipulator : PointerManipulator
             Debug.Log(e.position);
             Debug.Log("pou fed");
             pouHunger.addFood(10);
+            Inventory.Instance.Kebab--;
         }
     }
 

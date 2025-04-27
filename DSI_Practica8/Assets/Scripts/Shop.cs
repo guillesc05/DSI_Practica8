@@ -7,7 +7,6 @@ public class Shop : MonoBehaviour
 {
     private VisualElement _cartButton, _centerSpace, _pou, _shopVE;
     [SerializeField] private VisualTreeAsset _shopTemplate;
-    [SerializeField] private Inventory _inventory;
     
     private bool _shopOpen = false;
 
@@ -40,10 +39,10 @@ public class Shop : MonoBehaviour
 
     void BuyKebab(ClickEvent click)
     {
-        if(_inventory.Money >= 2)
+        if(Inventory.Instance.Money >= 2)
         {
-            _inventory.Money -= 2;
-            _inventory.Kebab++;
+            Inventory.Instance.Money -= 2;
+            Inventory.Instance.Kebab++;
         }
     }
 

@@ -3,9 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-[CreateAssetMenu(fileName = "Inventory", menuName = "ScriptableObjects/Inventory")]
-public class Inventory : ScriptableObject
+public class Inventory : MonoBehaviour
 {
+    public static Inventory Instance;
+
+    private void OnEnable()
+    {
+        if (Instance == null) Instance = this;
+        else Destroy(this);
+    }
+
     [SerializeField] private int _money;
     [SerializeField] private int _kebab;
     public UnityEvent QuantityUpdated;

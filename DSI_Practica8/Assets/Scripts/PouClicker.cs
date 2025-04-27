@@ -6,7 +6,6 @@ using UnityEngine.UIElements;
 
 public class PouClicker : MonoBehaviour
 {
-    [SerializeField] private Inventory _inventory;
     private VisualElement _pou;
 
     private void OnEnable()
@@ -18,6 +17,6 @@ public class PouClicker : MonoBehaviour
 
     void GetMoney(ClickEvent click)
     {
-        _inventory.Money++;
+        Inventory.Instance.Money++;
     }
 }
