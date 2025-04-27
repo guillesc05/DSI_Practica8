@@ -4,6 +4,7 @@ using UnityEngine.UIElements;
 public class ExampleDragger : PointerManipulator
 {
     private Vector3 m_Start;
+    private Vector2 m_StartPos;
     protected bool m_Active;
     private int m_PointerId;
     private Vector2 m_StartSize;
@@ -39,6 +40,7 @@ public class ExampleDragger : PointerManipulator
         if (CanStartManipulation(e))
         {
             m_Start = e.localPosition;
+            m_StartPos = new Vector2(target.style.left.value.value, target.style.top.value.value);
             m_PointerId = e.pointerId;
 
             m_Active = true;
@@ -64,6 +66,9 @@ public class ExampleDragger : PointerManipulator
         {
             return;
         }
+
+        target.style.top = m_StartPos.y;
+        target.style.left = m_StartPos.x;
 
         m_Active = false;
         target.ReleaseMouse();
