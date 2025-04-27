@@ -14,7 +14,12 @@
             </ui:VisualElement>
         </ui:VisualElement>
         <ui:VisualElement name="rightBar" style="flex-grow: 1; width: auto; max-width: 15%; background-color: rgb(164, 68, 68);">
-            <ui:TextField picking-mode="Ignore" label="Nombre" value="Introduce nombre" style="min-height: 33%; max-height: 33%; -unity-text-align: middle-center; flex-direction: column;" />
+            <ui:VisualElement name="nameChanger" style="flex-grow: 1;">
+                <ui:TextField picking-mode="Ignore" value="Introduce Nombre" name="newName" style="min-height: auto; max-height: none; -unity-text-align: middle-center; flex-direction: column; height: auto;" />
+                <ui:VisualElement name="nameButton" style="flex-grow: 1; width: 80%; align-self: center; height: 60%; min-height: 60%; background-color: rgb(74, 236, 49); align-items: center; justify-content: center;">
+                    <ui:Label tabindex="-1" text="Pulsa para cambiar nombre" parse-escape-sequences="true" display-tooltip-when-elided="true" style="align-self: center; -unity-text-align: middle-center; white-space: normal;" />
+                </ui:VisualElement>
+            </ui:VisualElement>
             <ui:VisualElement name="foodContainer" style="flex-grow: 1; width: 100%; height: 20%; max-height: 33%; align-items: center; padding-top: 5%;">
                 <ui:VisualElement name="foodImage" style="flex-grow: 1; width: 60%; height: 60%; align-items: center; background-image: url(&quot;project://database/Assets/Images/kebap.png?fileID=2800000&amp;guid=de75ba093277dd644876258b05833eff&amp;type=3#kebap&quot;); -unity-background-scale-mode: scale-to-fit;" />
                 <ui:Label tabindex="-1" text="x500" parse-escape-sequences="true" display-tooltip-when-elided="true" name="foodNumber" style="-unity-text-align: upper-right; max-width: 100%; min-width: 90%;" />
