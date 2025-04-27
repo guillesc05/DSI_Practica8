@@ -2,24 +2,24 @@
     <ui:VisualElement name="background" style="flex-grow: 1; flex-direction: row; background-color: rgb(248, 153, 153);">
         <ui:VisualElement name="leftBar" style="flex-grow: 1; max-width: 15%; background-color: rgb(164, 67, 67); padding-bottom: 2%;">
             <ui:VisualElement name="coinContainer" style="flex-grow: 1; width: 100%; height: 20%; max-height: 17%; align-items: center; padding-top: 5%;">
-                <ui:VisualElement name="coinImage" style="flex-grow: 1; width: 60%; height: 60%; align-items: center; background-image: url(&quot;project://database/Assets/moneda.png?fileID=2800000&amp;guid=e472ad7aa27725b4c8f8cad80a936139&amp;type=3#moneda&quot;); -unity-background-scale-mode: scale-to-fit;" />
+                <ui:VisualElement name="coinImage" style="flex-grow: 1; width: 60%; height: 60%; align-items: center; background-image: url(&quot;project://database/Assets/Images/moneda.png?fileID=2800000&amp;guid=e472ad7aa27725b4c8f8cad80a936139&amp;type=3#moneda&quot;); -unity-background-scale-mode: scale-to-fit;" />
                 <ui:Label tabindex="-1" text="x500" parse-escape-sequences="true" display-tooltip-when-elided="true" name="coinNumber" style="-unity-text-align: upper-right; max-width: 100%; min-width: 90%;" />
             </ui:VisualElement>
-            <ui:Slider label="&#10;" high-value="100" direction="Vertical" style="width: auto; min-width: auto; max-height: 83%; min-height: 83%;" />
+            <ui:Slider label="&#10;" high-value="100" direction="Vertical" name="hunger" style="width: auto; min-width: auto; max-height: 83%; min-height: 83%;" />
         </ui:VisualElement>
         <ui:VisualElement name="middle" style="flex-grow: 1; align-items: center; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; justify-content: center;">
             <ui:VisualElement name="pouInfo" style="flex-grow: 1; min-width: 100%; min-height: 100%; align-items: center; justify-content: center; opacity: 1; display: flex; visibility: visible;">
                 <ui:Label tabindex="-1" text="Jose Antonio PT" parse-escape-sequences="true" display-tooltip-when-elided="true" name="pouName" style="width: 50%; align-items: center; -unity-text-align: upper-center;" />
-                <ui:VisualElement name="pouImage" style="flex-grow: 1; max-width: none; width: 50%; height: 60%; max-height: 60%; background-image: url(&quot;project://database/Assets/pou1.png?fileID=2800000&amp;guid=184112b09e4784e41a649839fa1cb1d2&amp;type=3#pou1&quot;); -unity-background-scale-mode: scale-to-fit;" />
+                <ui:VisualElement name="pouImage" style="flex-grow: 1; max-width: none; width: 50%; height: 60%; max-height: 60%; background-image: url(&quot;project://database/Assets/Images/pou1.png?fileID=2800000&amp;guid=184112b09e4784e41a649839fa1cb1d2&amp;type=3#pou1&quot;); -unity-background-scale-mode: scale-to-fit;" />
             </ui:VisualElement>
         </ui:VisualElement>
         <ui:VisualElement name="rightBar" style="flex-grow: 1; width: auto; max-width: 15%; background-color: rgb(164, 68, 68);">
             <ui:TextField picking-mode="Ignore" label="Nombre" value="Introduce nombre" style="min-height: 33%; max-height: 33%; -unity-text-align: middle-center; flex-direction: column;" />
             <ui:VisualElement name="foodContainer" style="flex-grow: 1; width: 100%; height: 20%; max-height: 33%; align-items: center; padding-top: 5%;">
-                <ui:VisualElement name="foodImage" style="flex-grow: 1; width: 60%; height: 60%; align-items: center; background-image: url(&quot;project://database/Assets/kebap.png?fileID=2800000&amp;guid=de75ba093277dd644876258b05833eff&amp;type=3#kebap&quot;); -unity-background-scale-mode: scale-to-fit;" />
+                <ui:VisualElement name="foodImage" style="flex-grow: 1; width: 60%; height: 60%; align-items: center; background-image: url(&quot;project://database/Assets/Images/kebap.png?fileID=2800000&amp;guid=de75ba093277dd644876258b05833eff&amp;type=3#kebap&quot;); -unity-background-scale-mode: scale-to-fit;" />
                 <ui:Label tabindex="-1" text="x500" parse-escape-sequences="true" display-tooltip-when-elided="true" name="foodNumber" style="-unity-text-align: upper-right; max-width: 100%; min-width: 90%;" />
             </ui:VisualElement>
-            <ui:VisualElement name="shopButton" style="flex-grow: 1; min-height: 33%; background-image: url(&quot;project://database/Assets/pouCart.png?fileID=2800000&amp;guid=aeef9cc69687c954ea1b7f739bd27f86&amp;type=3#pouCart&quot;); -unity-background-scale-mode: scale-to-fit;" />
+            <ui:VisualElement name="shopButton" style="flex-grow: 1; min-height: 33%; background-image: url(&quot;project://database/Assets/Images/pouCart.png?fileID=2800000&amp;guid=aeef9cc69687c954ea1b7f739bd27f86&amp;type=3#pouCart&quot;); -unity-background-scale-mode: scale-to-fit;" />
         </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>

@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UIElements;
 
 
-public class Lab3 : MonoBehaviour
+public class Practica8 : MonoBehaviour
 {
     private void OnEnable()
     {
