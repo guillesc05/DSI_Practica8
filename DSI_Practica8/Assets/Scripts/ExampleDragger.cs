@@ -5,7 +5,7 @@ public class ExampleDragger : PointerManipulator
 {
     private Vector3 m_Start;
     private Vector2 m_StartPos;
-    protected bool m_Active;
+    public bool m_Active;
     private int m_PointerId;
     private Vector2 m_StartSize;
     public ExampleDragger()

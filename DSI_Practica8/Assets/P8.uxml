@@ -5,7 +5,7 @@
                 <ui:VisualElement name="coinImage" style="flex-grow: 1; width: 60%; height: 60%; align-items: center; background-image: url(&quot;project://database/Assets/Images/moneda.png?fileID=2800000&amp;guid=e472ad7aa27725b4c8f8cad80a936139&amp;type=3#moneda&quot;); -unity-background-scale-mode: scale-to-fit;" />
                 <ui:Label tabindex="-1" text="x500" parse-escape-sequences="true" display-tooltip-when-elided="true" name="coinNumber" style="-unity-text-align: upper-right; max-width: 100%; min-width: 90%;" />
             </ui:VisualElement>
-            <ui:Slider label="&#10;" high-value="100" direction="Vertical" name="hunger" style="width: auto; min-width: auto; max-height: 83%; min-height: 83%;" />
+            <ui:Slider label="&#10;" high-value="100" direction="Vertical" name="hunger" style="width: auto; min-width: auto; max-height: 83%; min-height: 83%; background-color: rgba(0, 0, 0, 0);" />
         </ui:VisualElement>
         <ui:VisualElement name="middle" style="flex-grow: 1; align-items: center; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; justify-content: center;">
             <ui:VisualElement name="pouInfo" style="flex-grow: 1; min-width: 100%; min-height: 100%; align-items: center; justify-content: center; opacity: 1; display: flex; visibility: visible;">

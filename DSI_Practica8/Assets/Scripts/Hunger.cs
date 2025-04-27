@@ -20,4 +20,9 @@ public class Hunger : MonoBehaviour
     {
         hunger.value -= hungerDecreaseSpeed * Time.deltaTime;
     }
+
+    public void addFood(int foodValue)
+    {
+        hunger.value+= foodValue;
+    }
 }
