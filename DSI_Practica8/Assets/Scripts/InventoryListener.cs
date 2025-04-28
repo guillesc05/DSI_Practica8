@@ -7,7 +7,7 @@ public class InventoryListener : MonoBehaviour
 {
     private TextElement _moneyAmount, _kebabAmount;
 
-    private void OnEnable()
+    private void Start()
     {
         VisualElement root = GetComponent<UIDocument>().rootVisualElement;
 

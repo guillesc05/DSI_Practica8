@@ -7,6 +7,7 @@ public class Hunger : MonoBehaviour
 {
     Slider hunger;
     [SerializeField] float hungerDecreaseSpeed = 2.0f;
+    [SerializeField] AudioSource _pouTriste;
     private void OnEnable()
     {
         VisualElement root = GetComponent<UIDocument>().rootVisualElement;
@@ -21,8 +22,19 @@ public class Hunger : MonoBehaviour
         hunger.value -= hungerDecreaseSpeed * Time.deltaTime;
     }
 
-    public void addFood(int foodValue)
+    private void AddFood(int foodValue)
     {
         hunger.value+= foodValue;
+    }
+
+    public bool TryAddFood(int foodValue)
+    {
+        if (hunger.value >= 98) { 
+            _pouTriste.Play();
+            return false;
+        } 
+
+        AddFood(foodValue);
+        return true;
     }
 }
