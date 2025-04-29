@@ -1,0 +1,11 @@
+.unity-base-slider__tracker{
+	width: 50px;
+	background-color: #00F0FF;
+	border-radius: 15px;
+}
+
+.unity-base-slider__dragger{
+	width: 60px;
+	background-color: #00FF00;
+	border-radius: 15px;
+}
