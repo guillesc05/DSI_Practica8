@@ -16,6 +16,11 @@ public class Practica8 : MonoBehaviour
         img.AddManipulator(new ExampleDragger());
         img.AddManipulator(new HoverManipulator());
         img.AddManipulator(new FoodManipulator(root, GetComponent<Hunger>()));
+        
+    }
+
+    private void Start()
+    {
         LoadInventoryFromJSON();
         GetComponent<InventoryListener>().UpdateDisplay();
     }

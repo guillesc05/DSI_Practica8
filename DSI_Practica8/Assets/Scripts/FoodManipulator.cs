@@ -33,7 +33,7 @@ public class FoodManipulator : PointerManipulator
 
     void OnPointerUp(PointerUpEvent e)
     {
-        if (m_Hover && pou.worldBound.Contains(e.position))
+        if (m_Hover && pou.worldBound.Contains(e.position) && Inventory.Instance.Kebab > 0)
         {
             Debug.Log(e.position);
             Debug.Log("pou fed");
